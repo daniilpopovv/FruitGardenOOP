@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fruits;
 
-include_once (__DIR__.'/../../Fruits/Pear.php');
+include_once(__DIR__ . '/../../Fruits/Pear.php');
 
 use PHPUnit\Framework\TestCase;
 

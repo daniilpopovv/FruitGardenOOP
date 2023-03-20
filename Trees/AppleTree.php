@@ -16,7 +16,8 @@ class AppleTree extends FruitTree
 
     public function __construct($id)
     {
-        parent::__construct($id, 'Apple Tree', $this->minYield, $this->maxYield);
+        parent::__construct($id, 'Apple Tree', $this->minYield,
+            $this->maxYield);
         for ($i = 0; $i < $this->getYield(); $i++) {
             $this->addFruit(new Apple());
         }

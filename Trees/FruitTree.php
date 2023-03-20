@@ -13,8 +13,12 @@ class FruitTree
     private int $yield;
     private array $fruits = [];
 
-    public function __construct(int $id, string $name, int $minYield, int $maxYield)
-    {
+    public function __construct(
+        int $id,
+        string $name,
+        int $minYield,
+        int $maxYield
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->yield = rand($minYield, $maxYield);

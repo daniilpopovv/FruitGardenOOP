@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Gardens;
 
 include_once(__DIR__ . '/../../Gardens/FruitGarden.php');
@@ -91,7 +93,7 @@ class FruitGardenTest extends TestCase
         $garden->collectAllFruits();
         $weights = $garden->calculateWeights();
 
-        $sumWeights= $weights['Apple'] + $weights['Pear'];
+        $sumWeights = $weights['Apple'] + $weights['Pear'];
         $this->assertEquals(31, $sumWeights);
     }
 
@@ -116,7 +118,7 @@ class FruitGardenTest extends TestCase
         $garden->collectAllFruits();
         $amounts = $garden->countFruits();
 
-        $sumAmount= $amounts['Apple'] + $amounts['Pear'];
+        $sumAmount = $amounts['Apple'] + $amounts['Pear'];
         $this->assertEquals(5, $sumAmount);
     }
 }
